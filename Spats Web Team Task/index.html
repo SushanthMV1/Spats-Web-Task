@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Internshala</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="navbar" id="navbar">
+            <div class="navlogo">
+                <img src="Internshala_company_logo.png" width="100%" height="100%">
+            </div>
+
+            <div class="navlink">
+                <a href="#uploadContainerdiv" class="link">Post</a>
+                <a href="#fetchContainer" class="link">View</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Upload Container -->
+    <div class="uploadContainerdiv" id="uploadContainerdiv">
+        <!-- Title of the div -->
+        <div class="uploadContainerdivtitle">
+            Post your Vacancies Seamlessly
+        </div>
+
+        <!-- Container -->
+        <div class="uploadContainer" id="uploadContainer">
+            <!-- Title -->
+            <h1 class="uploadContainertitle">Upload the Information about your business and let everyone know that you are hiring</h1>
+
+            <!-- Form -->
+            <form id="uploadForm">
+                <!-- Input Elements -->
+                <div class="inputform">
+                    <div class="type1Input">
+                        <!-- Job Type -->
+                        <div class="elm elm1">
+                            <label class="label" for="jobtype">JOB TYPE</label>
+                            <select class="option input" id="jobtype" required>
+                                <option value="Internship">Internship</option>
+                                <option value="Full Time Job">Full Time Job</option>
+                                <option value="Contract">Contract</option>
+                            </select>
+                        </div>
+
+                        <!-- Stipend -->
+                        <div class="elm elm1">
+                            <label for="stipend" class="label">STIPEND(Rs/month)</label>
+                            <input type="number" class="stipend input" id="stipend" required placeholder="Enter Stipend" min="1000">
+                        </div>
+
+                        <!-- Duration -->
+                        <div class="elm elm1">
+                            <label for="duration" class="label">DURATION</label>
+                            <input type="text" class="duration input" id="duration" required id="duration" placeholder="Enter Duration">
+                        </div>
+
+                        <!-- Company -->
+                        <div class="elm elm1">
+                            <label for="companyName" class="label">NAME OF THE COMPANY</label>
+                            <input type="text" class="input" required id="companyName" placeholder="Enter Company">
+                        </div>
+
+                        <!-- Start date -->
+                        <div class="elm elm1">
+                            <label for="start" class="label">START BY</label>
+                            <input type="date" id="start" class="input" required>
+                        </div>
+
+                        <!-- Apply By -->
+                        <div class="elm elm1">
+                            <label for="applyBy" class="label">APPLY BY</label>
+                            <input type="date" id="applyBy" class="input" required>
+                        </div>
+                    </div>
+
+                    <div class="type2Input">
+                        <!-- Location -->
+                        <div class="elm elm2">
+                            <label for="location" class="label">LOCATION</label>
+                            <input type="text" id="location" class="input" required placeholder="Enter Location">
+                        </div>
+
+                        <!-- Role -->
+                        <div class="elm elm2">
+                            <label for="role" class="label">ROLE</label>
+                            <input type="text" id="role" class="input" required placeholder="Enter Role">
+                        </div>
+
+                        <!-- Description -->
+                        <div class="elm elm2">
+                            <label for="Des" class="label">DESRIPTION</label>
+                            <textarea id="Des" placeholder="Enter the job description here" class="input input2" required></textarea>
+                        </div>
+
+                        <!-- Skills Required -->
+                        <div class="elm elm2">
+                            <label for="SkillReq" class="label">SKILLS REQUIRED</label>
+                            <textarea id="SkillReq" placeholder="Enter the skills required here" class="input input2" required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit and Reset -->
+                <div class="submitandReset">
+                    <!-- Submit -->
+                    <div class="buttonelm">
+                        <input type="submit" value="Upload" class="button" id="Upload">
+                    </div>
+
+                    <!-- Reset -->
+                    <div class="buttonelm">
+                        <input type="reset" value="Reset" class="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <br><br><br><br><br>
+    <!-- Fetch Container -->
+    <div class="fetchContainer" id="fetchContainer">
+        <!-- Title -->
+        <div class="fetchContainertitle" id="fetchContainertitle">
+            Latest Postings on Internshala &#x1f525
+        </div>
+
+        <!-- Sample Posting -->
+        <div class="job">
+            <div class="slotA">
+                <div class="slotA1">
+                    <div class="role">Sample Job</div>
+                    <div class="company">Sample Company</div>
+                </div>
+
+                <div class="slotA2">
+                    <div class="jobtype">Job Type</div>
+                </div>
+            </div>
+            
+            <div class="slotB">
+                <div class="slotB1">
+                    <div class="stipend">
+                        <i class="fa-solid fa-money-bill" style="margin-right: 5px;"></i>
+                        Stipend
+                    </div>
+                    <div class="location">
+                        <i class="fa-solid fa-location-dot icon" style="margin-right: 11px;"></i>
+                        Location
+                    </div>
+                    <div class="duration">
+                        <i class="fa-solid fa-calendar icon" style="margin-right: 9px;"></i>
+                        Duration
+                    </div>
+                </div>
+
+                <div class="slotB2">
+                    <div class="startby">
+                        <div class="caption">Start By:</div>
+                        <div class="content"> Give the Start date</div>
+                    </div>
+                    <div class="applyby">
+                        <div class="caption">Apply By:</div>
+                        <div class="content">Give the date by which the Applicant has to Apply by</div>
+                    </div>
+                    <div class="jobdes">
+                        <div class="caption">Description:</div>
+                        <div class="content">Give the Description about the Role</div>
+                    </div>
+                    <div class="skillsReq">
+                        <div class="caption">Skills Required:</div>
+                        <div class="content">Give the Skills Required</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footpanel">
+            <a href="#navbar" class="backtotop">Back To Top</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
